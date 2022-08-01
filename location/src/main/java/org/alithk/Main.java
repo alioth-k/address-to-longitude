@@ -2,7 +2,7 @@ package org.alithk;
 
 import org.alithk.configs.Command;
 import org.alithk.entity.AddressCoordinate;
-import org.alithk.keys.Zhou;
+
 import org.alithk.reader.CsvReader;
 import org.alithk.writer.CsvWriter;
 
@@ -15,7 +15,7 @@ public class Main {
         long startTime=System.currentTimeMillis();
         //获取地理编码器并初始化
         AddressEncoding addressEncoding = new AddressEncoding();
-        addressEncoding.setKey(Zhou.GAO_DE);
+        addressEncoding.setKey(Command.KEY);
         //数据来源
         CsvReader csvReader=new CsvReader("files/origin.csv");
         //存入地址
